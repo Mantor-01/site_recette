@@ -1,0 +1,189 @@
+/* 
+<!-- CSS -->
+<!-- Sélecteurs, id(#)/class(.) -->
+<!-- marging = marge externe 
+    marging 60px(haut), 100px(droite), 200px(bas), 10px(gauche), sens horaire  -->
+<!-- pading = marge interne-->
+<!-- encadrer des éléments grâce à <div> -->
+<!-- display: block, inline, inline-block les plus courants -->
+
+https://www.w3schools.com/css/css3_object-fit.asp
+https://www.w3schools.com/css/css_rwd_mediaqueries.asp
+
+*/
+
+* {overflow: auto;}
+
+body {
+    background-color: #8BA1BB;
+    font-family: Arial;
+}
+h1 {
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 16px;
+}
+.center {
+    text-align: center;
+    width: 100%;
+}
+
+
+/* <div> */
+div.contenu {
+    background-color: white;
+    margin: 0px 8px 20px 8px;
+    padding: 30px 8px 20px 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+div.categorie {
+    margin-bottom: -35px;
+}
+
+div.separateur {
+    background-color: black;
+    width: 150px;
+    height: 1px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.info {
+    position: relative;
+}
+
+div.colonne_1 {
+    background-color: white;
+}
+
+div.colonne {
+    width: 100%;
+    display: inline-block;
+}
+
+div.colonne h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 15px;
+    border-bottom: 5px solid #6C829D;
+    padding-bottom: 5px;
+}
+
+div.ingredients p {
+    border: 1px solid lightgrey;
+    padding: 5px 0;
+    margin: 5px 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+
+/* <p> */
+p.categorie {
+    background-color: black;
+    color: white;
+    display: inline-block;
+    padding: 5px 15px;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 4px;
+}
+p.description {
+    text-align: center;
+    max-width: 400px;
+    display: inline-block;
+    font-size: 14px;
+}       
+
+
+/* <table> */
+table.info {
+    position: absolute; 
+    bottom: 0px; 
+    width: 100%;
+    color: white; 
+    background-color: #6C829DC0; 
+    height: 50px;
+}
+table.info th {
+    font-size: 14px;
+    vertical-align: bottom;
+    padding-bottom: 8px;
+}
+table.info td {
+    text-align: center;
+    font-size: 12px;
+    vertical-align: top;
+}
+table.preparation p.numero {
+    background-color: #6C829D;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    width: 25px;
+    height: 25px;
+    padding-top: 5px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    margin: 0   ;
+}
+table.preparation td {
+    vertical-align: top;
+}
+table.preparation td.preparation_etape {
+    font-size: 14px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+table.preparation tr {
+    height: 40px;
+}
+
+/* <img> */
+img.info {
+    display: block;
+    max-height: 400px;
+    object-fit: cover;
+    min-height: 200px;
+    background-color: lightgray;
+}
+
+
+ /* styles pour ordinateur */
+@media only screen and (min-width: 768px) {
+    div.contenu {
+        min-width: 290px;
+        margin: auto 10% 2% 10%;
+        padding: 30px;
+    }
+    table.info {
+        height: 80px;
+    }
+    table.info th {
+        font-size: 16px;
+    }
+    table.info td {
+        font-size: 14px;
+    }   
+    div.colonne_1 {
+        margin-right: 10%;
+    }
+    div.colonne_2 {
+        float: right;
+    }
+    div.colonne {
+        width: 45%;
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    div.contenu {
+        min-width: 290px;
+        margin-right: auto;
+        margin-left: auto;
+        width: 650px;
+    }
+}
